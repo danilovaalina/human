@@ -41,6 +41,7 @@ func main() {
 		ActionName: "running",
 	}
 
+	// Наследование методов Human
 	fmt.Println(action.SayHello())
 	fmt.Println(action.GetAge())
 
@@ -49,5 +50,6 @@ func main() {
 	action.SetAge(31)
 	fmt.Println(action.GetAge())
 
+	// Встраивание через указатель дает доступ к оригинальному объекту
 	fmt.Println(human.GetAge())
 }
